@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+   <PreferenceScreen android:title="Carrier label Settings">
+            <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Carrier label On/Off" android:key="carrier_label_visibility" android:defaultValue="true" android:summaryOn="Shown" android:summaryOff="Hidden" />
+            <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Carrier label color" android:key="carrier_label_text_color" android:dependency="carrier_label_visibility" android:defaultValue="\#ffffff" />
+            <com.wubydax.romcontrol.v2.prefs.MyListPreference android:entries="@array/carrier_entries" android:title="Carrier label text" android:key="is_custom_carrier_label" android:dependency="carrier_label_visibility" android:defaultValue="0" android:entryValues="@array/carrier_entry_values" app:dependentValue="0" />
+            <com.wubydax.romcontrol.v2.prefs.MyEditTextPreference android:title="Custom text for carrier label" android:key="custom_carrier_label" android:dependency="is_custom_carrier_label" android:defaultValue="Custom Text" />
+        </PreferenceScreen>
+</PreferenceScreen>

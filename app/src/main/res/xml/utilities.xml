@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+  <PreferenceCategory android:title="Reboot Menu" />
+    <PreferenceCategory android:title="Choose Reboot Options" />
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Switch to old Or New Reboot Menu" android:key="aurora_power_menu_mode" android:defaultValue="false" android:summaryOn="old or new reboot menu mode will be shown" android:summaryOff="Currently removed" />
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Power Menu" android:key="killprocess_power_menu_power" android:defaultValue="true" android:summaryOn="Power Icon will be shown" android:summaryOff="Currently removed" />
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Emergency Mode" android:key="killprocess_power_menu_emergency" android:defaultValue="true" android:summaryOn="Emergency mode will be shown" android:summaryOff="Currently removed" />
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Screenrecorder" android:key="killprocess_power_menu_screenrecord" android:defaultValue="false" android:summaryOn="Screencast mode will be shown" android:summaryOff="Currently removed" />
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Flashlight" android:key="killprocess_power_menu_flashlight" android:defaultValue="false" android:summaryOn="Flashlight mode will be shown" android:summaryOff="Currently removed" />
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Screenshot" android:key="killprocess_power_menu_screenshot" android:defaultValue="false" android:summaryOn="Screenshot mode will be shown" android:summaryOff="Currently removed" />
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Restart" android:key="killprocess_power_menu_restart" android:defaultValue="false" android:summaryOn="Restart mode will be shown" android:summaryOff="Currently removed" />
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Data" android:key="killprocess_power_menu_data" android:defaultValue="false" android:summaryOn="Data mode will be shown" android:summaryOff="Currently removed" />
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Airplane" android:key="killprocess_power_menu_airplane" android:defaultValue="false" android:summaryOn="Airplane mode will be shown" android:summaryOff="Currently removed" />
+</PreferenceScreen>

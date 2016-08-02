@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title=" DPI Changes Reboot Required ">
+        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference android:title=" 560 DPI" android:summary="" app:scriptFileName="dpi560.sh" app:rebootOptions="imminent" />
+        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference android:title="640 DPI" android:summary="" app:scriptFileName="dpi640.sh" app:rebootOptions="imminent" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title=" Backup / Restore some USEFULL Stuff ">
+        <PreferenceScreen android:title="  WiFi">
+            <com.wubydax.romcontrol.v2.prefs.RunScriptPreference android:title="Backup Wifi configurations" android:summary="" app:scriptFileName="wifibackup.sh" />
+            <com.wubydax.romcontrol.v2.prefs.RunScriptPreference android:title="Restore Wifi configurations" android:summary="Auto reboots to apply settings" app:scriptFileName="wifirestore1.sh" app:rebootOptions="imminent" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="  SMS / MMS">
+            <com.wubydax.romcontrol.v2.prefs.RunScriptPreference android:title="Backup SMS and MMS" android:summary="" app:scriptFileName="mmssmsbk.sh" />
+            <com.wubydax.romcontrol.v2.prefs.RunScriptPreference android:title="Restore SMS and MMS" android:summary="" app:scriptFileName="mmssmsrestore.sh" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="  Contacts ">
+            <com.wubydax.romcontrol.v2.prefs.RunScriptPreference android:title="Backup Contacts" android:summary="" app:scriptFileName="contactbk.sh" />
+            <com.wubydax.romcontrol.v2.prefs.RunScriptPreference android:title="Restore Contacts" android:summary="" app:scriptFileName="contactrestore.sh" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="  Call Logs  ">
+            <com.wubydax.romcontrol.v2.prefs.RunScriptPreference android:title="Backup Call logs" android:summary="" app:scriptFileName="calllogbk.sh" />
+            <com.wubydax.romcontrol.v2.prefs.RunScriptPreference android:title="Restore Call logs" android:summary="" app:scriptFileName="calllogrestore.sh" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="MMS Screen Off Receiving Notification for MM">
+        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference android:title="MMS Screen OFF / Disabled" android:summary="Screen will Stays OFF when receiving a text" app:scriptFileName="script#mms_screenwake_disable" />
+        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference android:title="MMS Screen OFF / Enabled" android:summary="Screen will Wake when receiving a text" app:scriptFileName="script#mms_screenwake_enable" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Restore Stock Notification Panel Colors">
+        <com.wubydax.romcontrol.v2.prefs.RunScriptPreference android:title="Restore Stock Notification Panel Colors" android:summary="May take 1 min" app:packageNameToKill="com.android.systemui" app:scriptFileName="notificationcolorrestore.sh" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Browser Homepage" />
+    <com.wubydax.romcontrol.v2.prefs.RunScriptPreference android:title="Set Google as Home" android:summary="Set HomePage default as Google" app:packageNameToKill="" app:scriptFileName="delete_browser_data.sh" />
+</PreferenceScreen>

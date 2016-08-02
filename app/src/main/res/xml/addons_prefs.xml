@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="Clock/Date Mods" />
+    <PreferenceCategory android:title="Lockscreen Clock/Date Colorized" />
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Show seconds in hours" android:key="lock_seconds" android:defaultValue="0" android:summaryOn="Show" android:summaryOff="Hide" app:packageNameToKill="com.android.systemui" app:isSilent="false" />
+    <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Colorized Date Text" android:key="kg_date_color" android:summary="Choose a color" android:defaultValue="\#ffffffff" app:packageNameToKill="com.android.systemui" app:isSilent="false" alphaSlider="false" hexValue="true" />
+    <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Colorized Hours" android:key="kg_clock_hours_color" android:summary="Choose a color" android:defaultValue="\#ffffffff" app:packageNameToKill="com.android.systemui" app:isSilent="false" alphaSlider="false" hexValue="true" />
+    <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Colorized Minutes" android:key="kg_clock_minutes_color" android:summary="Choose a color" android:defaultValue="\#ffffffff" app:packageNameToKill="com.android.systemui" app:isSilent="false" alphaSlider="false" hexValue="true" />
+    <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Colorized Seconds" android:key="kg_clock_second_color" android:summary="Choose a color" android:defaultValue="\#ffffffff" app:packageNameToKill="com.android.systemui" app:isSilent="false" alphaSlider="false" hexValue="true" />
+    <PreferenceCategory android:title="Lockscreen Font Style" />
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Custom Font Style" android:key="use_lockscreen_clock_font_style" android:defaultValue="false" android:summaryOn="Custom font enabled" android:summaryOff="Disabled" />
+    <com.wubydax.romcontrol.v2.prefs.MyListPreference android:entries="@array/lockscreen_font_style_entries" android:title="Lockscreen Clock Font Style" android:key="lockscreen_clock_font_style" android:dependency="use_lockscreen_clock_font_style" android:entryValues="@array/lockscreen_font_style_values" app:packageNameToKill="com.android.systemui" app:isSilent="false" />
+    <PreferenceCategory android:title="Hide Lockscreen Elements">
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Phone shortcut in Lockscreen" android:key="set_shortcuts_phone" android:defaultValue="1" android:summaryOn="Shown" android:summaryOff="Hidden" />
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Camera shortcut in Lockscreen" android:key="set_shortcuts_mode" android:defaultValue="1" android:summaryOn="Shown" android:summaryOff="Hidden" />
+    </PreferenceCategory>
+</PreferenceScreen>

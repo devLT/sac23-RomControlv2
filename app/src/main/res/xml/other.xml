@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="Launcher Modds" />
+    <PreferenceScreen android:title="Launcher Gestures">
+        <com.wubydax.romcontrol.v2.prefs.MyListPreference android:entries="@array/launcher_gesture_entries" android:title="Double tap" android:key="doubletap" android:summary="%s" android:entryValues="@array/launcher_gesture_values" app:rebootDevice="true" />
+        <com.wubydax.romcontrol.v2.prefs.MyListPreference android:entries="@array/launcher_gesture_entries" android:title="Swipe Up" android:key="swipe_up" android:summary="%s" android:entryValues="@array/launcher_gesture_values" app:rebootDevice="true" />
+        <com.wubydax.romcontrol.v2.prefs.MyListPreference android:entries="@array/launcher_gesture_entries" android:title="Swipe Down" android:key="swipe_down" android:summary="%s" android:entryValues="@array/launcher_gesture_values" app:rebootDevice="true" />
+    </PreferenceScreen>
+    <com.wubydax.romcontrol.v2.prefs.MyListPreference android:entries="@array/tw_effect_entries" android:title="Touchwiz Page Effect" android:key="tw_page_effect" android:defaultValue="1" android:entryValues="@array/tw_effect_values" app:packageNameToKill="com.sec.android.app.launcher" app:isSilent="false" />
+    <PreferenceCategory android:title="Fast Charge" />
+    <com.wubydax.romcontrol.v2.prefs.MyCheckBoxPreference android:title="Fast Charging" android:key="adaptive_fast_charging" android:summary="Enable or disable Fast Charging" android:defaultValue="true" android:summaryOn="Enabled" android:summaryOff="disabled" />
+    <PreferenceCategory android:title=" Heads Up Settings " />
+    <com.wubydax.romcontrol.v2.prefs.MyCheckBoxPreference android:title="Heads Up Notifications" android:key="heads_up_notifications_enabled" android:defaultValue="0" android:summaryOn="Heads Up disabled" android:summaryOff="Heads Up enabled" />
+    <PreferenceCategory android:title=" USB Settings " />
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="USB plug in/out wakeup" android:key="usb_plugged" android:defaultValue="true" android:summaryOn="On" android:summaryOff="Off" />
+    <PreferenceCategory android:title="Other Settings" />
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Multiwindow" android:key="multi_window_enabled" android:defaultValue="false" android:summaryOn="Option enabled" android:summaryOff="Option disabled" />
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Multiwindow Always on After Reboot" android:key="multiwindow_enabled_always" android:defaultValue="false" android:summaryOn="Option enabled" android:summaryOff="Option disabled" />
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Outdoor Mode" android:key="display_outdoor_mode" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Wipe Hangouts cache - Automatic Reboot" android:key="script#hangouts_reset" android:summary="Clear Hangouts if not getting notifications" />
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Screen Pinning" android:key="lock_to_app_enabled" android:defaultValue="false" android:summaryOn="Option is currently enabled" android:summaryOff="Option is currently disabled" />
+</PreferenceScreen>
